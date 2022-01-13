@@ -7,6 +7,9 @@
         <entry key="..\:/AndroidApp/NavGraph/app/src/main/res/layout/fragment_blank_a.xml" value="0.20260416666666667" />
         <entry key="..\:/AndroidApp/NavGraph/app/src/main/res/layout/fragment_blank_b.xml" value="0.20260416666666667" />
         <entry key="..\:/AndroidApp/NavGraph/app/src/main/res/layout/fragment_blank_c.xml" value="0.20260416666666667" />
+        <entry key="..\:/AndroidApp/NavGraph/app/src/main/res/layout/fragment_nested.xml" value="0.24583333333333332" />
+        <entry key="..\:/AndroidApp/NavGraph/app/src/main/res/layout/fragment_nested_a.xml" value="0.24583333333333332" />
+        <entry key="..\:/AndroidApp/NavGraph/app/src/main/res/layout/fragment_nested_b.xml" value="0.24583333333333332" />
       </map>
     </option>
   </component>
