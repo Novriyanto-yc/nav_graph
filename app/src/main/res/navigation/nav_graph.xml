@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blankAFragment">
+
+    <fragment
+        android:id="@+id/blankAFragment"
+        android:name="com.example.navgraph.fragments.BlankAFragment"
+        android:label="fragment_blank_a"
+        tools:layout="@layout/fragment_blank_a" >
+        <action
+            android:id="@+id/action_blankAFragment_to_blankBFragment"
+            app:destination="@id/blankBFragment" />
+        <action
+            android:id="@+id/action_blankAFragment_to_blankCFragment"
+            app:destination="@id/blankCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankBFragment"
+        android:name="com.example.navgraph.fragments.BlankBFragment"
+        android:label="fragment_blank_b"
+        tools:layout="@layout/fragment_blank_b" >
+        <action
+            android:id="@+id/action_blankBFragment_to_nestedNavigation"
+            app:destination="@id/nestedNavigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankCFragment"
+        android:name="com.example.navgraph.fragments.BlankCFragment"
+        android:label="fragment_blank_c"
+        tools:layout="@layout/fragment_blank_c" />
+
+    <navigation android:id="@+id/nestedNavigation" app:startDestination="@id/nestedFragment">
+        <fragment
+            android:id="@+id/nestedFragment"
+            android:name="com.example.navgraph.fragments.NestedFragment"
+            android:label="fragment_nested"
+            tools:layout="@layout/fragment_nested" />
+    </navigation>
+</navigation>
