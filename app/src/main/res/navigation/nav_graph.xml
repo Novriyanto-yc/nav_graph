@@ -41,11 +41,19 @@
             <action
                 android:id="@+id/action_nestedFragment_to_nestedAFragment2"
                 app:destination="@id/nestedAFragment2" />
+            <action
+                android:id="@+id/action_nestedFragment_to_nestedBFragment"
+                app:destination="@id/nestedBFragment" />
         </fragment>
         <fragment
             android:id="@+id/nestedAFragment2"
             android:name="com.example.navgraph.fragments.nested.NestedAFragment"
             android:label="fragment_nested_a"
             tools:layout="@layout/fragment_nested_a" />
+        <fragment
+            android:id="@+id/nestedBFragment"
+            android:name="com.example.navgraph.fragments.nested.NestedBFragment"
+            android:label="fragment_nested_b"
+            tools:layout="@layout/fragment_nested_b" />
     </navigation>
 </navigation>

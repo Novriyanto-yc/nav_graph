@@ -25,5 +25,10 @@ class NestedFragment : Fragment() {
             val direction = NestedFragmentDirections.actionNestedFragmentToNestedAFragment2()
             findNavController().navigate(direction)
         }
+
+        nestedB.setOnClickListener {
+            val direction = NestedFragmentDirections.actionNestedFragmentToNestedBFragment()
+            findNavController().navigate(direction)
+        }
     }
 }
